@@ -1,5 +1,7 @@
-import { shopName } from "@/constants";
+import { Navbar } from "@/components";
+import { navItems, shopName } from "@/constants";
 import { ThemeConfig } from "@/styles/theme/ThemeConfig";
+import { Stack } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -25,7 +27,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.variable}>
         <AppRouterCacheProvider>
-          <ThemeConfig>{children}</ThemeConfig>
+          <ThemeConfig>
+            <Stack width="100%">
+              <Navbar pageName={shopName} items={navItems} />
+              {children}
+            </Stack>
+          </ThemeConfig>
         </AppRouterCacheProvider>
       </body>
     </html>
