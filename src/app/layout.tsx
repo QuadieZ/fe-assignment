@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Footer, Navbar } from "@/components";
 import { navItems, shopName } from "@/constants";
 import { ThemeConfig } from "@/styles/theme/ThemeConfig";
 import { Stack } from "@mui/material";
@@ -30,6 +30,7 @@ export default function RootLayout({
           <ThemeConfig>
             <Navbar pageName={shopName} items={navItems} />
             <Stack width="100%">{children}</Stack>
+            <Footer />
           </ThemeConfig>
         </AppRouterCacheProvider>
       </body>

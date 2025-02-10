@@ -7,7 +7,7 @@ export const navItems: NavbarItemProps[] = [
     { href: "#", text: "Home" },
     { href: "#", text: "Products" },
     { href: "#", text: "About Us" },
-    { href: "#", text: "Contact" },
+    { href: "https://www.pichy.dev", text: "Contact" },
 ]
 
 export const serviceItems: Service[] = [
