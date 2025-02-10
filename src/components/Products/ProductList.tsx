@@ -13,7 +13,7 @@ export const ProductList = (props: ProductListProps) => {
     <Stack
       flexWrap="wrap"
       maxWidth="80vw"
-      gap={2}
+      gap={3}
       flexDirection="row"
       justifyContent="center"
     >

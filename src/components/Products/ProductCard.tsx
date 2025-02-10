@@ -26,6 +26,12 @@ export const ProductCard = (props: ProductCardProps) => {
       sx={{
         width: 400,
         height: 180,
+        transition: "all 0.2s ease-in",
+        ":hover": {
+          transform: "scale(1.02)",
+          transition: "all 0.2s ease-in",
+        },
+        cursor: "pointer",
       }}
       elevation={3}
     >
