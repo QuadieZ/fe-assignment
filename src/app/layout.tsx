@@ -28,10 +28,8 @@ export default function RootLayout({
       <body className={poppins.variable}>
         <AppRouterCacheProvider>
           <ThemeConfig>
-            <Stack width="100%">
-              <Navbar pageName={shopName} items={navItems} />
-              {children}
-            </Stack>
+            <Navbar pageName={shopName} items={navItems} />
+            <Stack width="100%">{children}</Stack>
           </ThemeConfig>
         </AppRouterCacheProvider>
       </body>

@@ -14,16 +14,16 @@ export const BannerImage = (props: BannerImageProps) => {
     <Box width="100vw" height="45vh" position="relative">
       <Image
         fill
-        objectFit="cover"
-        objectPosition="top"
+        style={{
+          objectFit: "cover",
+          objectPosition: "top",
+          filter: "brightness(0.7)",
+        }}
         src={src}
         alt={alt ?? "Banner Image"}
         priority
         placeholder={blurSrc ? "blur" : "empty"}
         blurDataURL={blurSrc}
-        style={{
-          filter: "brightness(0.7)",
-        }}
       />
     </Box>
   );
